@@ -1,0 +1,178 @@
+
+/*Balises générales */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: /*'Roboto', */'Open Sans', Arial, sans-serif;
+    background-color: #eaf2d7;
+    padding-left : 15px;
+    padding-right : 15px;
+    margin : 0;
+    padding : 0;
+    
+}
+main {
+    padding : 20px;
+}
+
+footer {
+    padding : 20px;
+}
+
+/*header*/
+
+header {
+    display :flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top : 0;
+    width :100%;
+    background-color: white;
+   
+    
+}
+
+nav {
+    font-size: 0.9em;
+}
+
+nav img {
+    width:50px;
+    height : 50px;
+    padding : 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+}
+
+nav a:first-child {
+    border-right: 1px solid black;
+    padding-right : 6px;
+}
+
+#logo img {
+    height : 60px;
+}
+
+
+#logo {
+    display : flex;
+    align-items: center;
+}
+
+#user_infos {
+    display : flex;
+    align-items: center;
+}
+
+
+#account p {
+    margin : 5px;
+}
+
+h1 {
+    margin-left: 20px;
+    font-size : 1.8em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Sections*/ 
+section {
+    border-bottom: 1px solid gray;
+    padding-bottom : 20px;
+}
+
+h2 {
+    color : #6c7a89;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #6c7a89;
+    font-size : 2em;
+    padding-bottom : 20px;
+}
+
+h3 {
+    color : black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3:before {
+    content : "« ";
+    color : #6c7a89;
+}
+
+h3:after {
+    content : " »";
+    color : #6c7a89;
+}
+
+#biographie p {
+    border : 1px solid gray;
+    border-radius: 5px;
+    padding : 10px;
+}
+
+#photo_groupe {
+    
+    border-radius: 5px;
+    overflow: hidden;
+    /*width : 40vw;*/
+    height : 280px;
+    margin : 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+}
+
+#photo_groupe:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition : 0.3s;
+}
+
+@media all and (min-width : 769px) {
+    #biographie {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+   
+    #biographie img {
+        max-width: 100%;
+        height : auto;
+        object-fit: contain;
+        
+    }
+
+    #biographie p {
+        width : 40vw;
+        height : auto;
+        max-height : 280px;
+        margin : 15px;
+    }
+
+}
+
+@media all and (max-width : 769px) {
+
+    #biographie {
+        display: flex;
+        flex-direction: column;
+    }
+    
+   
+    #biographie img {
+        width : 88vw;
+        height : auto;
+    }
+
+    #biographie p {
+        margin : 15px;
+    }
+}
+

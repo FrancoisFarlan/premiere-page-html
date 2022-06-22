@@ -1,100 +1,121 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
     <title>TP Biographie</title>
 </head>
+
 <body>
-    
+
     <!--Header-->
     <header>
         <!--logo-->
         <div id="logo">
             <img src="images/mymusic_logo.png" alt="Logo my Music" title="logo My Music">
-        </div>
 
-        <div id="nomsite">
             <h1>My Music</h1>
         </div>
-        
+
+
         <!--Utilisateur-->
-        <div id="user">
+        <nav>
 
             <!--avatar-->
-            <div id="avatar">
-                <img src="images/avatar/avatar-dark_vador.jpg" alt="votre avatar" title="avatar dark vador">
+            <div id="user_infos">
+
+                <!--Pseudo et statut-->
+                <div id="avatar">
+                    <img id="avatar" src="images/mandoavatar.png" alt="votre avatar" title="avatar">
+
+                </div>
+
+                <!--statut du compte-->
+                <div id="account">
+                    <p>Francois F, connecté</p>
+                    <p><a href="#">Mon Compte</a>
+                        <a href="#">Déconnection</a>
+                    </p>
+                </div>
             </div>
-            
-            <!--Pseudo et statut-->
-            <div id="pseudo">
-                <p>Francois F, connecté</p>
             </div>
-            
-            <!--statut du compte-->
-            <div id="account">
-                <p><a href="#">Mon Compte</a> | <a href="#">Déconnection</a></p>
-            </div>
-        </div>
-        
-        <hr>
+        </nav>
+
     </header>
     <!--Biographie-->
-    <section>
-        <h2> Biographie : Gojira</h2>
-        <img src="images/Gojira.png" alt="photo du groupe" title="epica">
-        <p><a href="index.html">Retour Accueil</a></p>
-        <hr>
+    <main>
 
-        <h2>Biographie</h2>
-        <p>
-            Gojira est un groupe français de metal, originaire d'Ondres. Il est initialement formé en 1996 sous le nom de Godzilla, puis adopte 
-            le nom de Gojira en 2001. <br>
+        <h2>Gojira</h2>
 
-            Gojira est le premier groupe français à arriver en tête du classement Billboard Hard Rock Albums. Le groupe est considéré comme 
-            l'une des exportations françaises les plus réussies aux États-Unis; tous genres confondus. Gojira a reçu des nominations aux 
-            Grammy Awards pour le Meilleur album rock pour Magma et la Meilleure prestation metal pour les singles Silvera et Amazonia.
-        </p>
-            <hr>
 
-    </section>
+        <h3>Biographie</h3>
+        <section id="biographie">
+            
+            <div id="photo_groupe">
+            <img src="images/Gojira.png" alt="photo du groupe" title="gojira">
+            </div>
+            
+            <p>
+                Gojira est un groupe français de metal, originaire d'Ondres. Il est initialement formé en 1996 sous le
+                nom de Godzilla, puis adopte
+                le nom de Gojira en 2001. Depuis sa formation, Gojira compte un total de sept albums studio et trois DVD live. Associé au death metal ainsi qu'au metal progressif, Gojira se distingue dans la scène metal par la sensibilité écologiste et spirituelle de leurs chansons.
+            </p>
+            <p>Gojira est le premier groupe français à arriver en tête du classement Billboard Hard Rock Albums. Le
+                groupe est considéré comme
+                l'une des exportations françaises les plus réussies aux États-Unis; tous genres confondus. Gojira a reçu
+                des nominations aux
+                Grammy Awards pour le Meilleur album rock pour Magma et la Meilleure prestation metal pour les singles
+                Silvera et Amazonia.
+            </p>
+        </section>
 
-    <!--Discographie-->
-    <section>
-        <div id="membres">
-            <h2>Membres</h2>
-            <ul>
-                <li>Joseph Duplantier (chant et guitare)</li>
-                <li>Mario Duplantier (batterie)</li>
-                <li>Christian Andreu (guitare)</li>
-                <li>Jean-Michel Labadie (basse)</li>
-            </ul>
-        </div>
 
-        <hr>
 
-        <div id="albums">
-            <h2>Albums</h2>
-            <ul>
-                <li>2001 - Terra Incognita</li>
-                <li>2003 - The Link</li>
-                <li>2005 - From Mars to Sirus</li>
-                <li>2008 - The Way of All Flesh</li>
-                <li>2012 - L'Enfant Sauvage</li>
-                <li>2016 - Magma</li>
-                <li>2021 - Fortitude</li>
-            </ul>
-        </div>
-    </section>
+        <!--Discographie-->
+        <section id="membres">
+            
+                <h3>Membres</h3>
+                <ul>
+                    <li>Joseph Duplantier (chant et guitare)</li>
+                    <li>Mario Duplantier (batterie)</li>
+                    <li>Christian Andreu (guitare)</li>
+                    <li>Jean-Michel Labadie (basse)</li>
+                </ul>
+        
+        </section>
+            
+        <section id="albums">
+           
+                <h3>Albums</h3>
+                <ul>
+                    <li>2001 - Terra Incognita</li>
+                    <li>2003 - The Link</li>
+                    <li>2005 - From Mars to Sirus</li>
+                    <li>2008 - The Way of All Flesh</li>
+                    <li>2012 - L'Enfant Sauvage</li>
+                    <li>2016 - Magma</li>
+                    <li>2021 - Fortitude</li>
+                </ul>
+            
 
-    <hr>
+            <p><a href="index.html">Retour Accueil</a></p>
+        </section>
+    </main>
+   
 
     <footer>
         <p>&copy; Francois FARLAN</p>
     </footer>
 
-   
-    
+
+
 </body>
+
 </html>
