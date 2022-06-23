@@ -176,3 +176,44 @@ h3:after {
     }
 }
 
+/*formulaire*/
+
+td {
+    text-align: center;
+    border : 1px solid blue;
+    border-collapse: collapse;
+
+}
+
+#nobordertd {
+    border: none;
+}
+
+.btn-group {
+    
+    text-align: center;
+    padding-top : 10px;
+}
+.btn {
+    text-align: center;
+    font-size : 1.1em;
+    
+    color : #13181C;
+    background-color:white;
+    border : 1px solid #13181C;
+    border-radius: 3px;
+    padding : 8px;
+}
+
+.btn:hover {
+    
+    color : white;
+    background-color:#13181C;
+    border : 1px solid white;
+}
+
+.form-column {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

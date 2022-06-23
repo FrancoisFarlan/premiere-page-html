@@ -107,6 +107,145 @@
 
             <p><a href="index.html">Retour Accueil</a></p>
         </section>
+
+
+        <!--formulaire inscription-->
+        <section id="formulaire_inscription">
+
+            <h2>Mon compte</h2>
+            <form name="inscription" action="" method="post">
+                <fieldset>
+                    <legend>Vos informations personnelles</legend>
+                    <div class="form-column">
+                    <div class="form-line">
+                    <label for="nom">Nom :</label><br>
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom ?" size="20" maxlength="15" required autofocus />
+                    <br>
+    
+                    <label for="prenom">Prenom :</label><br>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre prénom ?" size="20" maxlength="15" required/>
+                    <br>
+    
+                    <label for="date_naissance">Date de naissance :</label><br>
+                    <input type="date" name="date_naissance" id="date_naissance"/>
+                    <br>
+    
+                    <label for="email">Email :</label><br>
+                    <input type="email" name="email" id="email" placeholder="Votre email ?" required/>
+                    <br>
+                    </div>
+                    <div class="form-line">
+                    <label for="password">Mot de passe :</label><br>
+                    <input type="password" name="password" id="password" placeholder="Votre mot de passe ?" required />
+                    <br>
+    
+                    <label for="password-repeat">Répéter Mot de passe :</label><br>
+                    <input type="password" name="password-repeat" id="password-repeat" placeholder="Votre mot de passe ?" required />
+                    <br>
+    
+                    <label for="groupe">Groupe préféré :</label><br>
+                    <select name="groupe" id="groupe">
+                        <optgroup label="Rock">
+                            <option value="metallica">Metallica</option>
+                            <option value="nirvana">Nirvana</option>
+                        </optgroup>
+                        <optgroup label="Rap">
+                            <option value="iam">Iam</option>
+                            <option value="ntm">NTM</option>
+                        </optgroup>
+                    </select>
+                    <br>
+    
+                    <label for="telephone">Téléphone :</label><br>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Votre téléphone ?"/>
+                    <br>
+                    </div>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Votre formule d'abonnement</legend>
+                    
+                    <table>
+    
+                        <thead>
+    
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <input type="radio" name="formule" id="premiumplus" />
+                                    <label for="premiumplus">Premium +</label>
+                                </th>
+    
+                                <th>
+                                    <input type="radio" name="formule" id="premium" />
+                                    <label for="premium">Premium</label>
+                                </th>
+    
+                                <th>
+                                    <input type="radio" name="formule" id="discovery" />
+                                    <label for="discovery">Discovery</label>
+                                </th>
+    
+                            </tr>
+    
+                        </thead>
+    
+                        <tbody>
+    
+                            <tr>
+                                <th>Accès Web</th>
+    
+                                <td><img src="images/icon-ok-32x32.png" alt="icone OK"></td>
+                                <td><img src="images/icon-ok-32x32.png" alt="icone OK"></td>
+                                <td><img src="images/icon-ok-32x32.png" alt="icone OK"></td>
+                            </tr>
+    
+                            <tr>
+                                <th>Accès Mobile</th>
+    
+                                <td><img src="images/icon-ok-32x32.png" alt="icone OK"></td>
+                                <td><img src="images/icon-ok-32x32.png" alt="icone OK"></td>
+                                <td><img src="images/icon-not-ok-32x32.png" alt="icone Croix"></td>
+                            </tr>
+    
+                            <tr>
+                                <th>Ecoute illimitée</th>
+    
+                                <td><img src="images/icon-ok-32x32.png" alt="icone OK"></td>
+                                <td><img src="images/icon-not-ok-32x32.png" alt="icone Croix"></td>
+                                <td><img src="images/icon-not-ok-32x32.png" alt="icone Croix"></td>
+                            </tr>
+    
+                            <tr>
+                                <th>Tarifs</th>
+    
+                                <td>11,99€/mois</td>
+                                <td>5,99€/mois</td>
+                                <td>Gratuit</td>
+                            </tr>
+    
+                            <tr>
+                                <th></th>
+    
+                                <td id="nobordertd" colspan="3">
+                                    <input type="checkbox" name="newsletter" id="newsletter"/>
+                                    <label for="newsletter">Recevoir nos newsletters</label>
+                                    <input type="checkbox" name="newsletter_partenaires" id="newsletter_partenaires"/>
+                                    <label for="newsletter_partenaires">Recevoir les newsletters de nos partenaires</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="btn-group">
+                        <input class ="btn" type="reset" name="Annuler" value="Annuler" title="Annuler" />
+                        <input class ="btn" type="submit" name="Valider" value="Valider" title="Valider"/>
+                        
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
    
 
